@@ -5,14 +5,14 @@
     font-family: 'Ysabeau Infant', sans-serif;
   }
 
-  .perfil
+.perfil
   {
     display: flex;
     justify-content: center;
     
   }
 
-  .perfil img
+.perfil img
   {
     height: 200px;
     width:200px;
@@ -20,12 +20,12 @@
     border:4px solid rgba(120, 245, 120, 0.896);
   }
 
-  .titulo {
+.titulo {
     text-align: center; 
     padding-bottom:100px;
   }
 
-  .titulo h1
+.titulo h1
   {
  display: inline-block; /* Permite centralizar o texto com margens automáticas */
  vertical-align: middle;
@@ -344,9 +344,20 @@ em
   border: 7px solid #fff;
 }
 
- /* Smartphone(até 768px) */
-@media only screen and (max-width: 768px)
+/*
+Android (Pixel 2) portrait · width: 412px
+Android (Pixel 2) landscape · width: 684px
+*/
+@media (orientation:portrait) and (max-width: 412px)
 {
+
+  .perfil img
+  {
+    height: 130px;
+    width:130px;
+    border-radius:100%;
+    border:4px solid rgba(120, 245, 120, 0.896);
+  }
 
  .titulo
   {
@@ -355,7 +366,7 @@ em
 
  .titulo h1
   {
-  font-size: 62px;
+  font-size: 42px;
   }
 
  .titulo img
@@ -369,42 +380,142 @@ em
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-top: 50px;
+  padding:30px;
   }
 
 .top-links img
   {
-  width: 80px;
-  height:80px;
+  width: 50px;
+  height:50px;
   }
+
+  figcaption
+{
+ position: relative;
+ left: 0;
+ bottom: 0;
+ width: 100%;
+ background: rgb(0 0 0 / 50%);
+ font-size: 17px;
+ color: #fff;
+ padding: 2px 5px;
+ box-sizing: border-box;
+ border-radius: 14px;
+}
+
+.secao-container 
+{
+ padding: 30px 20px;
+}
+
+.secao-banner
+{
+ background-image: url("assets/rx10m4_20190529-_R107789_to-raro.jpg");
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ width: 412px;
+ height: auto;
+}
 
 .container-descricao
  {
   border: 6px dotted rgba(242, 242, 24, 0.92);
-  padding: 20px 20px;
+  padding: 20px 30px;
+ }
+
+ .container-descricao h3 {
+  font-size: 18px;
+  font-weight: 250;
+ }
+ 
+ .container-descricao p {
+  font-size: 15px;
+  line-height: 1.4;
  }
   
 .nuvem1
  {
-  width: 80px;
-  height: 60px;
+  width: 50px;
+  height: 40px;
  }
   
 .nuvem2
  {
-  width: 80px;
-  height: 60px;
+  width: 50px;
+  height: 40px;
  }
 
+ /*secao skills*/
 .container-skills
- {
+{ 
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
   padding: 20px auto;
- }
+   
 }
 
+article h3
+{
+ font-size: 30px;
+ font-weight: 500;
+}
+.container-skills
+{
+  padding: 20px 10px;
+}
+.card-skills
+{
+ width: 140px;
+ background-color: #2f3237;
+ border-radius: 20px;   
+}
+
+.card-skills h3
+{
+  font-size: 15px;
+}
+
+.card-skills p
+{
+  font-size:14px;
+}
+
+.card-skills em
+{
+  font-size: 14px;
+}
+
+.container-imagem
+{
+  padding-top:10px;
+}
+
+.container-imagem img 
+{
+ 
+ width: 80px;
+ height: 70px;
+ 
+}
+
+.container-info
+{
+ padding: 20px;
+ height: 90px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+
+.container-info a
+{
+ color: #fff;
+ font-weight: 666;
+}
+
+}
 /*footer*/
 .rodape
 { 
@@ -444,3 +555,4 @@ em
   text-align: center;
   border-top: 1px solid #3b7863;
 }
+
