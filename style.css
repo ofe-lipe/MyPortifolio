@@ -344,11 +344,8 @@ em
   border: 7px solid #fff;
 }
 
-/*
-Android (Pixel 2) portrait · width: 412px
-Android (Pixel 2) landscape · width: 684px
-*/
-@media (orientation:portrait) and (max-width: 412px)
+
+@media (orientation:portrait) and (max-width: 475px)
 {
 
   .perfil img
